@@ -1,0 +1,37 @@
+\begin{frame}
+\titlepage 
+\end{frame}
+
+\begin{frame}
+\frametitle{Plan}
+  \tableofcontents[hideothersubsections]
+\end{frame}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Plan}
+    \tableofcontents[currentsection,hideothersubsections]
+  \end{frame}
+}
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Plan}
+    \tableofcontents[
+        currentsection,
+        currentsubsection,
+        subsectionstyle=show/shaded/hide,
+        subsubsectionstyle=show/show/hide
+    ]
+  \end{frame}
+}
+\AtBeginSubsubsection[]
+{
+  \begin{frame}<beamer>{Plan}
+    \tableofcontents[
+        currentsection,
+        currentsubsection,
+        subsectionstyle=show/shaded/hide,
+        subsubsectionstyle=show/shaded/hide
+    ]
+  \end{frame}
+}
